@@ -293,3 +293,42 @@ nav {
 	transform: scale(1.2);
 	opacity: 0.5;
 }
+
+/*Footer*/
+footer {
+	background-color: #111;
+	color: var(--clr-accent);
+	text-align: center;
+	padding: 2.5em 0;
+	font-size: var(--fs-h3);
+	font-weight: var(--fw-bold);
+}
+
+.social-list--link,
+.footer-link {
+	color: var(--clr-accent);
+	text-decoration: none;
+}
+.footer-link:hover {
+	text-decoration: underline;
+}
+
+.social-list--link:hover,
+.footer-link:hover {
+	opacity: 0.6;
+}
+
+.sosial-list {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	margin: 2em 0 0;
+	padding: 0%;
+}
+.social-list--item {
+	margin: 0.5em;
+}
+
+.social-list--item {
+	padding: 0.5em;
+}
