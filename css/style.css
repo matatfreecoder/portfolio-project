@@ -12,9 +12,9 @@
 	--fw-reg: 400;
 	--fw-bold: 700;
 
-	--clr-light: #fff;
-	--clr-dark: #303030;
-	--clr-accent: #16e0bd;
+	--clr-light: #ffffff;
+	--clr-dark: #2e2e2e;
+	--clr-accent: #14cfae;
 
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
@@ -23,6 +23,7 @@
 
 	--bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
 		0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+	--bs-light: 0.125em 0.125em 0.25em rgba(255, 255, 255, 0.35);
 }
 
 @media (min-width: 800px) {
@@ -50,7 +51,7 @@ body {
 }
 
 section {
-	padding: 5em 2em;
+	padding: 4em 2em;
 }
 
 img {
@@ -109,7 +110,8 @@ h3 {
 	margin-bottom: 0.025em;
 }
 
-.section-title--intro {
+.section-title--intro,
+.section-title--projects {
 	font-weight: var(--fw-reg);
 }
 
@@ -123,7 +125,8 @@ h3 {
 }
 
 .section-subtitle--intro,
-.section-subtitle--about {
+.section-subtitle--about,
+.section-subtitle--projects {
 	background: var(--clr-accent);
 	font-family: var(--ff-secondary);
 	margin-bottom: 1em;
@@ -430,11 +433,11 @@ footer {
 	opacity: 0.6;
 }
 
-.sosial-list {
+.social-list {
 	list-style: none;
 	display: flex;
 	justify-content: center;
-	margin: 2em 0 0;
+	margin: 0 0;
 	padding: 0%;
 }
 .social-list--item {
@@ -443,4 +446,67 @@ footer {
 
 .social-list--item {
 	padding: 0.5em;
+}
+
+/* Item page intro*/
+.section-subtitle--projects {
+	text-align: right;
+}
+
+@media (min-width: 600px) {
+	.intro-projects {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 1000px) {
+	.intro-projects {
+		padding-left: 2em;
+		text-align: center;
+	}
+	.section-subtitle--projects {
+		text-align: center;
+	}
+}
+/*styles for item page projects*/
+.projects {
+	background: rgb(53, 56, 65);
+	background: linear-gradient(
+		90deg,
+		rgba(53, 56, 65, 1) 0%,
+		rgba(84, 91, 101, 1) 35%,
+		rgba(56, 59, 68, 1) 100%
+	);
+	color: var(--clr-light);
+}
+
+.project-heading {
+	color: var(--clr-accent);
+}
+.project-img {
+	box-shadow: var(--bs-light);
+}
+
+.link-outside {
+	color: var(--clr-accent);
+	font-size: 1.2em;
+}
+
+@media (min-width: 600px) {
+	.project-item {
+		display: grid;
+		max-width: 1000px;
+		margin: 0 auto;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 3em;
+	}
+}
+
+@media (max-width: 600px) {
+	.project-describe {
+		margin-top: 20px;
+		text-align: center;
+	}
 }
