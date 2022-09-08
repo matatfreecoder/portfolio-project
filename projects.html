@@ -39,14 +39,18 @@
 			</button>
 			<nav class="nav">
 				<ul class="nav-list">
-					<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
 					<li class="nav-item">
-						<a href="#services" class="nav-link">My services</a>
+						<a href="/index.html" class="nav-link">Home</a>
 					</li>
 					<li class="nav-item">
-						<a href="#about" class="nav-link">About me</a>
+						<a href="/index.html#services" class="nav-link">My services</a>
 					</li>
-					<li class="nav-item"><a href="#work" class="nav-link">My work</a></li>
+					<li class="nav-item">
+						<a href="/index.html#about" class="nav-link">About me</a>
+					</li>
+					<li class="nav-item">
+						<a href="/index.html#work" class="nav-link">My work</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -61,9 +65,13 @@
 
 		<!--My projects-->
 
-		<section class="projects">
+		<section class="projects-dark" id="weather-js">
 			<div class="project-item">
-				<img src="./img/project1.png" alt="" class="project-img" />
+				<img
+					src="./img/project1.png"
+					alt="JavaScript Weather App"
+					class="project-img-dark"
+				/>
 				<div class="project-describe">
 					<h2 class="project-heading">JavaScript Weather App</h2>
 					<p class="project-technology">
@@ -82,6 +90,89 @@
 						></a>
 					</p>
 				</div>
+			</div>
+		</section>
+
+		<section class="projects-light" id="weather-react">
+			<div class="project-item">
+				<div class="project-describe">
+					<h2 class="project-heading">React Weather App</h2>
+					<p class="project-technology">
+						<strong>Technologies: </strong>
+						HTML, CSS, JavaScript, React, API
+					</p>
+					<p class="project-describe-text">
+						Shows the current weather and the forecast in a specified city.
+						Created with React.
+						<a
+							href="https://fanciful-cucurucho-f33fc4.netlify.app/"
+							class="link-outside"
+							target="_blank"
+						>
+							<i class="fa-solid fa-arrow-up-right-from-square"></i
+						></a>
+					</p>
+				</div>
+				<img
+					src="./img/project2.png"
+					alt="React Weather App"
+					class="project-img-light"
+				/>
+			</div>
+		</section>
+
+		<section class="projects-dark" id="dictionary-app">
+			<div class="project-item">
+				<img
+					src="./img/item3.png"
+					alt="React Dictionary"
+					class="project-img-dark"
+				/>
+				<div class="project-describe">
+					<h2 class="project-heading">React Dictionary</h2>
+					<p class="project-technology">
+						<strong>Technologies: </strong>
+						HTML, CSS, JavaScript, React, API
+					</p>
+					<p class="project-describe-text">
+						Searches for a specific word and shows the meaning, photos and
+						pronunciation.
+						<a
+							href="https://boisterous-genie-459e3b.netlify.app/"
+							class="link-outside"
+							target="_blank"
+						>
+							<i class="fa-solid fa-arrow-up-right-from-square"></i
+						></a>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="projects-light" id="responsive">
+			<div class="project-item">
+				<div class="project-describe">
+					<h2 class="project-heading">Responsive website</h2>
+					<p class="project-technology">
+						<strong>Technologies: </strong>
+						HTML, CSS, Bootstrap
+					</p>
+					<p class="project-describe-text">
+						Responsive design that looks equally good on different devices.
+						<a
+							href="https://super-shortbread-9dbc35.netlify.app/"
+							class="link-outside"
+							target="_blank"
+						>
+							<i class="fa-solid fa-arrow-up-right-from-square"></i
+						></a>
+					</p>
+				</div>
+				<img
+					src="./img/project4.png"
+					alt="Kirby fan website"
+					class="project-img-light"
+				/>
 			</div>
 		</section>
 

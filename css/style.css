@@ -51,7 +51,7 @@ body {
 }
 
 section {
-	padding: 4em 2em;
+	padding: 5em 2em;
 }
 
 img {
@@ -173,7 +173,7 @@ header {
 .nav-link {
 	color: inherit;
 	font-weight: var(--fw-bold);
-	font-size: var(--fs-h3);
+	font-size: var(--fs-h2);
 	text-decoration: none;
 }
 
@@ -449,6 +449,10 @@ footer {
 }
 
 /* Item page intro*/
+.intro-projects {
+	padding: 2em;
+}
+
 .section-subtitle--projects {
 	text-align: right;
 }
@@ -471,7 +475,7 @@ footer {
 	}
 }
 /*styles for item page projects*/
-.projects {
+.projects-dark {
 	background: rgb(53, 56, 65);
 	background: linear-gradient(
 		90deg,
@@ -485,8 +489,12 @@ footer {
 .project-heading {
 	color: var(--clr-accent);
 }
-.project-img {
+.project-img-dark {
 	box-shadow: var(--bs-light);
+}
+
+.project-img-light {
+	box-shadow: var(--bs);
 }
 
 .link-outside {
@@ -500,7 +508,7 @@ footer {
 		max-width: 1000px;
 		margin: 0 auto;
 		grid-template-columns: 1fr 1fr;
-		column-gap: 3em;
+		column-gap: 4em;
 	}
 }
 
